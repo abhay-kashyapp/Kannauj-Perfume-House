@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express.json());
 
 // Database Connection
-const mongoUri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/kannauj_perfumes';
+const mongoUri = process.env.MONGODB_URI || 'mongodb+srv://<db_username>:<db_password>@kannauj.ev9aerc.mongodb.net/kannauj_perfumes?appName=kannauj';
 mongoose.connect(mongoUri)
   .then(() => console.log('Successfully connected to MongoDB'))
   .catch(err => console.error('MongoDB connection error:', err));
