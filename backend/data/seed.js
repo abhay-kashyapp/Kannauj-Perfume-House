@@ -85,7 +85,7 @@ const perfumesData = [
 
 const seedDatabase = async () => {
   try {
-    const mongoUri = process.env.MONGODB_URI || 'mongodb+srv://<db_username>:<db_password>@kannauj.ev9aerc.mongodb.net/kannauj_perfumes?appName=kannauj';
+    const mongoUri = process.env.MONGODB_URI || 'mongodb+srv://abhaykashyap2804_db_user:Abhay%40123@kannauj.ev9aerc.mongodb.net/kannauj_perfumes?appName=kannauj';
     console.log('Connecting to MongoDB at:', mongoUri);
     await mongoose.connect(mongoUri);
 
